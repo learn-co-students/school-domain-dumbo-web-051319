@@ -23,10 +23,13 @@ class School
   
   def sort
     #@roster.sort by name 
-    @roster.each do |elem| 
-      binding.pry
-    
+    newHash = {}
+    @roster.each do |class_studends, students| 
+      newHash[class_studends] = []
+      array = students.sort
+      newHash[class_studends] += array
     end
+    newHash
   end
 end 
 
