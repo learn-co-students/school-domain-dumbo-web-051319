@@ -21,9 +21,16 @@ class School
   
   def sort 
     sort = {}
-    roster.each do |grade, students|
+    roster.each do |grade, students| 
       roster[grade] = students.sort
     end
     roster
   end
+  
+  #INSTRUCTIONS FOR SORT METHOD
+  #sort = {} sort my hash 
+  #roster.each 
+  #roster is my list. for each person on the list go over grade and students
+  #sort by grade and then sort by the students in those grades 
+  #return the roster
 end 
